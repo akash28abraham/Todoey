@@ -12,16 +12,18 @@
 		16E8826922E761D2005F06CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16E8826722E761D2005F06CB /* Main.storyboard */; };
 		16E8826B22E761D3005F06CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16E8826A22E761D3005F06CB /* Assets.xcassets */; };
 		16E8826E22E761D3005F06CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16E8826C22E761D3005F06CB /* LaunchScreen.storyboard */; };
+		16E8827E22E78A87005F06CB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E8827D22E78A87005F06CB /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		16E8826022E761D2005F06CB /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16E8826322E761D2005F06CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		16E8826522E761D2005F06CB /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
+		16E8826522E761D2005F06CB /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodoListViewController.swift; path = ../TodoListViewController.swift; sourceTree = "<group>"; };
 		16E8826822E761D2005F06CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16E8826A22E761D3005F06CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16E8826D22E761D3005F06CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16E8826F22E761D3005F06CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16E8827D22E78A87005F06CB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Item.swift; path = ../Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,46 @@
 			isa = PBXGroup;
 			children = (
 				16E8826322E761D2005F06CB /* AppDelegate.swift */,
-				16E8826522E761D2005F06CB /* TodoListViewController.swift */,
-				16E8826722E761D2005F06CB /* Main.storyboard */,
-				16E8826A22E761D3005F06CB /* Assets.xcassets */,
-				16E8826C22E761D3005F06CB /* LaunchScreen.storyboard */,
+				16E8828022E78AB4005F06CB /* Controllers */,
+				16E8827F22E78A99005F06CB /* Data Model  */,
+				16E8828122E78ADC005F06CB /* Views */,
+				16E8828222E78AF0005F06CB /* Supporting Files */,
 				16E8826F22E761D3005F06CB /* Info.plist */,
 			);
 			path = Todoey;
+			sourceTree = "<group>";
+		};
+		16E8827F22E78A99005F06CB /* Data Model  */ = {
+			isa = PBXGroup;
+			children = (
+				16E8827D22E78A87005F06CB /* Item.swift */,
+			);
+			path = "Data Model ";
+			sourceTree = "<group>";
+		};
+		16E8828022E78AB4005F06CB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				16E8826522E761D2005F06CB /* TodoListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		16E8828122E78ADC005F06CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				16E8826722E761D2005F06CB /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		16E8828222E78AF0005F06CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				16E8826A22E761D3005F06CB /* Assets.xcassets */,
+				16E8826C22E761D3005F06CB /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16E8826622E761D2005F06CB /* TodoListViewController.swift in Sources */,
+				16E8827E22E78A87005F06CB /* Item.swift in Sources */,
 				16E8826422E761D2005F06CB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
